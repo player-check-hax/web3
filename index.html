@@ -710,6 +710,73 @@
 
             // Dữ liệu mẫu mặc định cho giải đấu Haxball
             const DEFAULT_DATA = {
+                leagueName: "Vietnam Haxball Championship S1",
+                teams: [
+                    {
+                        id: "team_1",
+                        name: "Saigon Phantoms Hax",
+                        tag: "SGP",
+                        color: "#10b981",
+                        region: "Hồ Chí Minh",
+                        logo: "",
+                        players: [
+                            { name: "SGP.TuấnAnh", position: "ST", number: "10", isCaptain: true },
+                            { name: "SGP.HoàngBao", position: "MID", number: "8", isCaptain: false },
+                            { name: "SGP.MinhTri", position: "DEF", number: "5", isCaptain: false },
+                            { name: "SGP.ThanhDat", position: "GK", number: "1", isCaptain: false }
+                        ]
+                    },
+                    {
+                        id: "team_2",
+                        name: "Hanoi Cyber Esports",
+                        tag: "HCE",
+                        color: "#06b6d4",
+                        region: "Hà Nội",
+                        logo: "",
+                        players: [
+                            { name: "HCE.DucMinh", position: "ST", number: "9", isCaptain: true },
+                            { name: "HCE.QuangHuy", position: "MID", number: "7", isCaptain: false },
+                            { name: "HCE.VanCuong", position: "DEF", number: "3", isCaptain: false },
+                            { name: "HCE.TuanKiet", position: "GK", number: "1", isCaptain: false }
+                        ]
+                    },
+                    {
+                        id: "team_3",
+                        name: "Danang Beach Boys",
+                        tag: "DBB",
+                        color: "#f59e0b",
+                        region: "Đà Nẵng",
+                        logo: "",
+                        players: [
+                            { name: "DBB.ThanhSon", position: "ST", number: "11", isCaptain: true },
+                            { name: "DBB.GiaHuy", position: "MID", number: "14", isCaptain: false },
+                            { name: "DBB.VanThang", position: "DEF", number: "4", isCaptain: false },
+                            { name: "DBB.HoangNam", position: "GK", number: "1", isCaptain: false }
+                        ]
+                    },
+                    {
+                        id: "team_4",
+                        name: "Cantho Phoenix",
+                        tag: "CTP",
+                        color: "#ec4899",
+                        region: "Cần Thơ",
+                        logo: "",
+                        players: [
+                            { name: "CTP.ChiKhang", position: "ST", number: "77", isCaptain: true },
+                            { name: "CTP.ThienPhu", position: "MID", number: "88", isCaptain: false },
+                            { name: "CTP.HuuPhuc", position: "DEF", number: "2", isCaptain: false },
+                            { name: "CTP.DinhVu", position: "GK", number: "1", isCaptain: false }
+                        ]
+                    }
+                ],
+                matches: [
+                    { id: "m_1", round: "Vòng 1", date: "2026-06-01", time: "20:00", homeId: "team_1", awayId: "team_2", status: "completed", homeScore: 3, awayScore: 1 },
+                    { id: "m_2", round: "Vòng 1", date: "2026-06-01", time: "21:00", homeId: "team_3", awayId: "team_4", status: "completed", homeScore: 2, awayScore: 2 },
+                    { id: "m_3", round: "Vòng 2", date: "2026-06-08", time: "20:00", homeId: "team_1", awayId: "team_3", status: "upcoming", homeScore: 0, awayScore: 0 },
+                    { id: "m_4", round: "Vòng 2", date: "2026-06-08", time: "21:00", homeId: "team_2", awayId: "team_4", status: "upcoming", homeScore: 0, awayScore: 0 }
+                ]
+            };
+
             // Trạng thái ứng dụng & Phân quyền
             let appState = loadData();
             let currentLogoBase64 = '';
